@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>春节 - 中国新年</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <div class="header">
+        <!-- 在这里包含网站的页眉部分，例如导航菜单和标志 -->
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <!-- 侧边栏 -->
+            <ul>
+                <li><a href="#introduction">介绍</a></li>
+                <li><a href="#cuisine">美食</a></li>
+                <li><a href="#history">历史</a></li>
+                <li><a href="#legend">传说</a></li>
+                <li><a href="#customs">习俗</a></li>
+            </ul>
+        </div>
+
+        <main>
+            <!-- 介绍 -->
+            <section id="introduction">
+                <h1>春节 - 中国新年</h1>
+                <p>春节，也被称为中国的新年，是中国最重要的传统节日之一。它通常在农历正月初一庆祝，是家人团聚、传统庆祝活动和美食的时刻。</p>
+            </section>
+
+            <!-- 美食 -->
+            <section id="cuisine" style="display: none;">
+                <h2>美食</h2>
+                <p>春节期间，人们会品尝各种传统美食，其中包括饺子、年糕、鱼等。这些食物在节日期间具有特殊的象征意义。</p>
+            </section>
+
+            <!-- 历史 -->
+            <section id="history" style="display: none;">
+                <h2>历史</h2>
+                <p>春节的历史可以追溯到数千年前，它与农历和农耕社会的传统有关。了解春节的历史背景和发展。</p>
+            </section>
+
+            <!-- 传说 -->
+            <section id="legend" style="display: none;">
+                <h2>传说</h2>
+                <p>春节有许多与之相关的传说，包括年兽的故事、关于赛龙舟的传说等。这些传说丰富了节日的文化内涵。</p>
+            </section>
+
+            <!-- 习俗 -->
+            <section id="customs" style="display: none;">
+                <h2>习俗</h2>
+                <p>春节有许多独特的习俗，如贴春联、舞龙舞狮、赏花灯、给红包等。这些习俗代代传承，为节日增添了色彩。</p>
+            </section>
+        </main>
+    </div>
+
+    <div class="footer">
+        <!-- 在这里包含网站的页脚部分，如版权信息等 -->
+        <p>&copy; 2023 春节 - 中国新年网站</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 为侧边栏链接绑定点击事件
+            $('.sidebar a').on('click', function (e) {
+                e.preventDefault(); // 阻止默认链接行为
+
+                // 获取点击链接的href属性值
+                var target = $(this).attr('href');
+
+                // 隐藏所有的section
+                $('main section').hide();
+
+                // 显示目标section
+                $(target).show();
+            });
+        });
+    </script>
+</body>
+
+</html>
