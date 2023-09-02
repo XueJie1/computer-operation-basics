@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>中秋节 - 月饼和家庭团聚</title>
+    <title>春节 - 中国新年</title>
     <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-    <script src="../../js/main.js"></script>
 </head>
 
 <body>
@@ -17,8 +15,6 @@
             <ul>
                 <li><a href="../../index.html">首页</a></li>
                 <li><a href="../about.html">关于我们</a></li>
-                <li><a href="../springfes/springfestival.html">春节</a></li>
-                <li><a href="../midautumn/midautumnfestival.html">中秋节</a></li>
             </ul>
         </nav>
     </div>
@@ -35,7 +31,6 @@
                 </ul>
             </div>
 
-
             <!-- 介绍 -->
             <section id="introduction">
                 <div id="introduction"></div>
@@ -44,35 +39,38 @@
             <!-- 美食 -->
             <section id="cuisine" style="display: none;">
                 <h2>美食</h2>
-                <p>中秋节期间，人们会品尝各种美味的月饼，这是节日的主要食物。月饼有许多不同的口味，如豆沙、莲蓉和五仁。</p>
+                <p>春节期间，人们会品尝各种传统美食，其中包括饺子、年糕、鱼等。这些食物在节日期间具有特殊的象征意义。</p>
             </section>
 
             <!-- 历史 -->
             <section id="history" style="display: none;">
                 <h2>历史</h2>
-                <p>中秋节有着悠久的历史，起源于中国古代的农业社会。了解中秋节的历史和文化传统。</p>
+                <p>春节的历史可以追溯到数千年前，它与农历和农耕社会的传统有关。了解春节的历史背景和发展。</p>
             </section>
 
             <!-- 传说 -->
             <section id="legend" style="display: none;">
                 <h2>传说</h2>
-                <p>中秋节有许多美丽的传说，其中最著名的是关于嫦娥奔月的故事。这个故事充满了浪漫和神秘。</p>
+                <p>春节有许多与之相关的传说，包括年兽的故事、关于赛龙舟的传说等。这些传说丰富了节日的文化内涵。</p>
             </section>
 
             <!-- 习俗 -->
             <section id="customs" style="display: none;">
                 <h2>习俗</h2>
-                <p>中秋节有许多传统习俗，如赏月、吃月饼、编织七巧板等。这些习俗代代相传，传承着节日的文化。</p>
+                <p>春节有许多独特的习俗，如贴春联、舞龙舞狮、赏花灯、给红包等。这些习俗代代传承，为节日增添了色彩。</p>
             </section>
     </main>
     </div>
 
     <div class="footer">
         <!-- 在这里包含网站的页脚部分，如版权信息等 -->
-        <p>&copy; 2023 </p>
+        <p>&copy; 2023 春节 - 中国新年网站</p>
     </div>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#introduction").load("introduction.html");
+        $("#footer").load("footer.html");
+    </script>
     <script>
         $(document).ready(function () {
             // 为侧边栏链接绑定点击事件
@@ -89,7 +87,7 @@
                 $(target).show();
             });
         });
-    </script> -->
+    </script>
 </body>
 
 </html>

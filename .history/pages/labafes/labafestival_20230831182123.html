@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>中秋节 - 月饼和家庭团聚</title>
-    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
-    <script src="../../js/main.js"></script>
+    <title>腊八节 - 中国传统节日</title>
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.js"></script>
 </head>
 
 <body>
@@ -16,9 +15,10 @@
         <nav>
             <ul>
                 <li><a href="../../index.html">首页</a></li>
-                <li><a href="../about.html">关于我们</a></li>
+                <li><a href="../../about.html">关于我们</a></li>
                 <li><a href="../springfes/springfestival.html">春节</a></li>
                 <li><a href="../midautumn/midautumnfestival.html">中秋节</a></li>
+                <li><a href="#">腊八节</a></li>
             </ul>
         </nav>
     </div>
@@ -35,44 +35,45 @@
                 </ul>
             </div>
 
-
             <!-- 介绍 -->
             <section id="introduction">
-                <div id="introduction"></div>
+                <h2>腊八节介绍</h2>
+                <p>腊八节是中国传统节日之一，通常在农历腊月初八庆祝。它有着悠久的历史和丰富的文化内涵。腊八节是一个重要的农历节日，人们会进行一系列的庆祝活动。</p>
             </section>
 
             <!-- 美食 -->
             <section id="cuisine" style="display: none;">
-                <h2>美食</h2>
-                <p>中秋节期间，人们会品尝各种美味的月饼，这是节日的主要食物。月饼有许多不同的口味，如豆沙、莲蓉和五仁。</p>
+                <div id="cuisine"></div>
             </section>
 
             <!-- 历史 -->
             <section id="history" style="display: none;">
                 <h2>历史</h2>
-                <p>中秋节有着悠久的历史，起源于中国古代的农业社会。了解中秋节的历史和文化传统。</p>
+                <p>腊八节的历史可以追溯到古代，它起源于农耕社会，与农历的变化和农业生产有关。了解腊八节的历史背景将有助于更好地理解这个节日。</p>
             </section>
 
             <!-- 传说 -->
             <section id="legend" style="display: none;">
                 <h2>传说</h2>
-                <p>中秋节有许多美丽的传说，其中最著名的是关于嫦娥奔月的故事。这个故事充满了浪漫和神秘。</p>
+                <p>腊八节有许多与之相关的传说，其中一些涉及祈福、祭祀和传统仪式。这些传说丰富了节日的文化内涵，也反映了中国古代的信仰和习俗。</p>
             </section>
 
             <!-- 习俗 -->
             <section id="customs" style="display: none;">
                 <h2>习俗</h2>
-                <p>中秋节有许多传统习俗，如赏月、吃月饼、编织七巧板等。这些习俗代代相传，传承着节日的文化。</p>
+                <p>腊八节有各种独特的习俗，包括腊八粥的制作和食用、祭祀祖先、庙会等活动。这些习俗是腊八节庆祝的重要组成部分。</p>
             </section>
+        </div>
     </main>
-    </div>
 
     <div class="footer">
-        <!-- 在这里包含网站的页脚部分，如版权信息等 -->
-        <p>&copy; 2023 </p>
+        <p>&copy; 2023 腊八节 - 中国传统节日网站</p>
     </div>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $("#introduction").load("labajie_introduction.html"); // Load content for the introduction section
+        $("#cuisine").load("labajie_cuisine.html"); // Load content for the cuisine section
+    </script>
     <script>
         $(document).ready(function () {
             // 为侧边栏链接绑定点击事件
@@ -89,7 +90,7 @@
                 $(target).show();
             });
         });
-    </script> -->
+    </script>
 </body>
 
 </html>

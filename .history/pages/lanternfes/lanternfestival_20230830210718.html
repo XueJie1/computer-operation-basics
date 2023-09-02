@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>春节 - 中国新年</title>
     <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.js"></script>
+    <script src="../../js/main.js"></script>
 </head>
 
 <body>
@@ -15,6 +17,10 @@
             <ul>
                 <li><a href="../../index.html">首页</a></li>
                 <li><a href="../about.html">关于我们</a></li>
+                <li><a href="../springfes/springfestival.html">春节</a></li>
+                <li><a href="../midautumn/midautumnfestival.html">中秋节</a></li>
+                <li><a href="../lanternfes/lanternfestival.html">元宵节</a></li>
+                <li><a href="../lanternfes/lanternfestival.html">元宵节</a></li>
             </ul>
         </nav>
     </div>
@@ -33,14 +39,12 @@
 
             <!-- 介绍 -->
             <section id="introduction">
-                <h1>春节 - 中国新年</h1>
-                <p>春节，也被称为中国的新年，是中国最重要的传统节日之一。它通常在农历正月初一庆祝，是家人团聚、传统庆祝活动和美食的时刻。</p>
+                <div id="introduction"></div>
             </section>
 
             <!-- 美食 -->
             <section id="cuisine" style="display: none;">
-                <h2>美食</h2>
-                <p>春节期间，人们会品尝各种传统美食，其中包括饺子、年糕、鱼等。这些食物在节日期间具有特殊的象征意义。</p>
+                <div id="cuisine"></div>
             </section>
 
             <!-- 历史 -->
@@ -68,8 +72,11 @@
         <p>&copy; 2023 春节 - 中国新年网站</p>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+        $("#introduction").load("introduction.html");
+        $("#cuisine").load("cuisine.html");
+    </script>
+    <!-- <script>
         $(document).ready(function () {
             // 为侧边栏链接绑定点击事件
             $('.sidebar a').on('click', function (e) {
@@ -85,7 +92,7 @@
                 $(target).show();
             });
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

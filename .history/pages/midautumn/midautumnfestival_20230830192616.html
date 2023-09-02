@@ -8,6 +8,17 @@
     <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
     <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
     <script src="../../js/main.js"></script>
+    <style>
+        /* 样式化美食列表 */
+        .food-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .food-list li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,8 +27,8 @@
         <nav>
             <ul>
                 <li><a href="../../index.html">首页</a></li>
-                <li><a href="../about.html">关于我们</a></li>
-                <li><a href="../springfes/springfestival.html">春节</a></li>
+                <li><a href="../../about.html">关于我们</a></li>
+                <li><a href="../springfestival/springfestival.html">春节</a></li>
                 <li><a href="../midautumn/midautumnfestival.html">中秋节</a></li>
             </ul>
         </nav>
@@ -35,16 +46,16 @@
                 </ul>
             </div>
 
-
-            <!-- 介绍 -->
-            <section id="introduction">
-                <div id="introduction"></div>
-            </section>
-
             <!-- 美食 -->
             <section id="cuisine" style="display: none;">
                 <h2>美食</h2>
-                <p>中秋节期间，人们会品尝各种美味的月饼，这是节日的主要食物。月饼有许多不同的口味，如豆沙、莲蓉和五仁。</p>
+                <!-- 添加美食列表 -->
+                <ul class="food-list">
+                    <li>豆沙月饼</li>
+                    <li>莲蓉月饼</li>
+                    <li>五仁月饼</li>
+                    <!-- 添加更多美食 -->
+                </ul>
             </section>
 
             <!-- 历史 -->
@@ -64,6 +75,7 @@
                 <h2>习俗</h2>
                 <p>中秋节有许多传统习俗，如赏月、吃月饼、编织七巧板等。这些习俗代代相传，传承着节日的文化。</p>
             </section>
+        </div>
     </main>
     </div>
 
@@ -72,7 +84,6 @@
         <p>&copy; 2023 </p>
     </div>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function () {
             // 为侧边栏链接绑定点击事件
@@ -87,9 +98,16 @@
 
                 // 显示目标section
                 $(target).show();
+
+                // 如果点击的是美食链接，则显示美食列表
+                if (target === '#cuisine') {
+                    $('.food-list').show();
+                } else {
+                    $('.food-list').hide();
+                }
             });
         });
-    </script> -->
+    </script>
 </body>
 
 </html>
