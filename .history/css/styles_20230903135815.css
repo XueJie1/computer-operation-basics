@@ -22,8 +22,6 @@ header , .header{
 
 .banner {
     text-align: center;
-    width: 100%;
-    height: auto;
 }
 
 nav ul {
@@ -109,10 +107,6 @@ h2 {
     color: #333;
 }
 
-h3 {
-    text-align: center;
-}
-
 /* 正文样式 */
 p {
     font-size: 16px;
@@ -122,13 +116,4 @@ p {
 
 section {
     margin-left: 20px;
-}
-
-.img {
-    text-align: center;
-}
-
-.img img {
-    width: 350px;
-    height: auto;
 }

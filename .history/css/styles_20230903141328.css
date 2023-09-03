@@ -109,10 +109,6 @@ h2 {
     color: #333;
 }
 
-h3 {
-    text-align: center;
-}
-
 /* 正文样式 */
 p {
     font-size: 16px;
@@ -126,9 +122,5 @@ section {
 
 .img {
     text-align: center;
-}
-
-.img img {
-    width: 350px;
-    height: auto;
+    width: max-content;
 }
