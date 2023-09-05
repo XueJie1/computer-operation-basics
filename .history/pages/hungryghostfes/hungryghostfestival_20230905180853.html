@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中元节 - 中国传统节日</title>
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css">
+    <script src="/js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>欢迎来到中国传统节日网站</h1>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">首页</a></li>
+                <li><a href="../../about.html">关于我们</a></li>
+                <li><a href="../springfes/springfestival.html">春节</a></li>
+                <li><a href="../midautumn/midautumnfestival.html">中秋节</a></li>
+                <li><a href="../dragonboatfes/dragonboatfestival.html">端午节</a></li>
+                <li><a href="../qixifes/qixifestival.html">七夕节</a></li>
+                <li><a href="../labafes/labafestival.html">腊八节</a></li>
+                <li><a href="../lanternfes/lanternfestival.html">元宵节</a></li>
+                <li><a href="../hungryghostfes/hungryghostfestival.html">中元节</a></li>
+                <li><a href="../doubleninthfes/doubleninthfestival.html">重阳节</a></li>
+
+
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <!-- 侧边栏 -->
+                <ul>
+                    <li><a href="#introduction">介绍</a></li>
+                    <li><a href="#cuisine">美食</a></li>
+                    <li><a href="#history">历史</a></li>
+                    <li><a href="#legend">传说</a></li>
+                    <li><a href="#customs">习俗</a></li>
+                </ul>
+            </div>
+
+            <!-- 介绍 -->
+            <section id="introduction">
+                <div id="introduction"></div>
+            </section>
+
+            <!-- 美食 -->
+            <section id="cuisine" style="display: none;">
+                <div id="cuisine"></div>
+            </section>
+
+            <!-- 历史 -->
+            <section id="history" style="display: none;">
+                <div id="history"></div>
+            </section>
+
+            <!-- 传说 -->
+            <section id="legend" style="display: none;">
+                <div id="legend"></div>
+            </section>
+
+            <!-- 习俗 -->
+            <section id="customs" style="display: none;">
+                <div id="customs"></div>
+            </section>
+        </div>
+    </main>
+
+    <div class="footer">
+        <p>&copy; 2023 中国传统节日网站</p>
+    </div>
+
+    <script>
+        $("#introduction").load("introduction.html");
+        $("#cuisine").load("cuisine.html");
+        $("#history").load("history.html");
+        $("#legend").load("legend.html");
+        $("#customs").load("customs.html"); 
+    </script>
+    <script>
+        $(document).ready(function () {
+            // 为侧边栏链接绑定点击事件
+            $('.sidebar a').on('click', function (e) {
+                e.preventDefault(); // 阻止默认链接行为
+
+                // 获取点击链接的href属性值
+                var target = $(this).attr('href');
+
+                // 隐藏所有的section
+                $('main section').hide();
+
+                // 显示目标section
+                $(target).show();
+            });
+        });
+    </script>
+</body>
+
+</html>
