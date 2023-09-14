@@ -161,6 +161,7 @@ div.desc {
 div.video {
     text-align: center;
     width: auto;
+    height: 600px;
 }
 
 /* 默认样式适用于大屏幕和桌面设备 */
