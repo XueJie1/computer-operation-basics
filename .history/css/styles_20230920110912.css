@@ -10,7 +10,6 @@ header , .header{
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    border-radius: 0px, 0px, 20px, 20px;
 }
 
 
@@ -83,7 +82,6 @@ footer a {
 .sidebar ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
 }
 
 .sidebar ul li {

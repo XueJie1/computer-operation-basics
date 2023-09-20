@@ -10,7 +10,6 @@ header , .header{
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-    border-radius: 0px, 0px, 20px, 20px;
 }
 
 
@@ -77,13 +76,11 @@ footer a {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    border-radius: 25px;
 }
 
 .sidebar ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
 }
 
 .sidebar ul li {
@@ -164,9 +161,9 @@ div.video {
     width: auto;
 }
 
-iframe {
-    width: 854px;
-    height: 480px;}
+bi_iframe {
+    width: 500px;
+}
 
 /* 默认样式适用于大屏幕和桌面设备 */
 
@@ -201,7 +198,6 @@ iframe {
         flex: 1; /* 侧边栏占满可用宽度 */
         padding: 10px; /* 调整侧边栏的内边距 */
         text-align: center; /* 文本居中对齐 */
-        border-radius: 2;
     }
 
     main {
